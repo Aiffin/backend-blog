@@ -33,11 +33,11 @@ app.use(`/api`,ImageRoute)
 
 //static file
 
-app.use(express.static(path.join(__dirname,"frontend","build")))
+// app.use(express.static(path.join(__dirname,"frontend","build")))
 
-app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname,"frontend","build","index.html"))
-})
+// app.get('*',function(req,res){
+//     res.sendFile(path.join(__dirname,"frontend","build","index.html"))
+// })
 
 
 app.get(`/`,(req,res)=>{
